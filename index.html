@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buton</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__inner">
+          <a class="logo nav__logo" href="#">
+            <svg class="logo__img nav__logo-img" viewBox="0 0 140 75" width="140" heigth="75">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#about">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#catalog">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#how">Как мы работаем</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Микрозелень</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Однолетние растения</a>
+            </li>
+          </ul>
+          <div class="nav__contacts">
+            <a class="nav__phone" href="tel:89299205151">
+              <p class="phone-link nav__phone-link">8 (929) 920-51-51</p>
+              <p class="nav__phone-text">заказать звонок</p>
+            </a>
+            <ul class="social nav__social">
+              <li class="social__item nav__social-item">
+                <a class="social__link nav__social-link" href="#" target="_blank">
+                  <svg class="social__img nav__social-img" viewBox="0 0 24 22" width="24" heigth="22">
+                    <use xlink:href="images/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item nav__social-item">
+                <a class="social__link nav__social-link" href="#" target="_blank">
+                  <svg class="social__img nav__social-img" viewBox="0 0 24 22" width="24" heigth="22">
+                    <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item nav__social-item">
+                <a class="social__link nav__social-link" href="#" target="_blank">
+                  <svg class="social__img nav__social-img" viewBox="0 0 24 22" width="24" heigth="22">
+                    <use xlink:href="images/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="nav__cart-btn">
+            <svg class="nav__cart-img" viewBox="0 0 37 37" width="37" heigth="37">
+              <use xlink:href="images/sprite.svg#cart"></use>
+            </svg>
+            <span class="nav__cart-counter nav__cart-counter--active" data-cart-counter>2</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__info">
+            <h1 class="big-heading hero__title">
+              ТЮЛЬПАНЫ
+              <span class="small-heading">от производителя</span>
+            </h1>
+            <p class="hero__location">
+              Тульская область, Москва
+            </p>
+            <p class="hero__subtitle">
+              свежие тюльпаны элитных сортов из собственных теплиц
+            </p>
+            <p class="hero__text">
+              Доставка цветов & Система оптовых скидок
+            </p>
+            <button class="btn btn-request hero__btn-request">Оставить заявку</button>
+            <a class="btn btn--transparent hero__btn-catalog" href="#catalog">Перейти к каталогу</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="catalog" class="catalog">
+      <div class="container">
+        <h1 class="big-heading catalog__title">Каталог</h1>
+        <div class="discount">
+          <p class="discount__title">Скидка за штуку при сумме заказа:</p>
+          <ul class="discount__list">
+            <li class="discount__item">
+              20 000 - 100 000 руб - <b>10%</b>
+            </li>
+            <li class="discount__item">
+              100 000 - 500 000 руб - <b>20%</b>
+            </li>
+            <li class="discount__item">
+              от 500 000 руб - <b>30%</b>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__inner">
+          <div class="catalog__item" data-id="1">
+            <picture class="catalog__item-picture">
+              <source srcset="images/flower/flower-1.avif" type="image/avif">
+              <source srcset="images/flower/flower-1.webp" type="image/webp">
+              <img class="catalog__img" src="images/flower/flower-1.jpg" alt="">
+            </picture>
+            <div class="catalog__item-info">
+              <div class="catalog__item-info-top">
+                <p class="catalog__item-title" data-title-flower>Creme Flag</p>
+                <p class="catalog__item-price" data-price-flower>40</p>
+              </div>
+              <button class="btn btn--transparent catalog__btn-about">Подробнее</button>
+              <button class="btn catalog__btn-buy" data-buy-btn>Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="catalog__item" data-id="2">
+            <picture class="catalog__item-picture">
+              <source srcset="images/flower/flower-2.avif" type="image/avif">
+              <source srcset="images/flower/flower-2.webp" type="image/webp">
+              <img class="catalog__img" src="images/flower/flower-2.jpg" alt="">
+            </picture>
+            <div class="catalog__item-info">
+              <div class="catalog__item-info-top">
+                <p class="catalog__item-title" data-title-flower>Columbus</p>
+                <p class="catalog__item-price" data-price-flower>40</p>
+              </div>
+              <button class="btn btn--transparent catalog__btn-about">Подробнее</button>
+              <button class="btn catalog__btn-buy" data-buy-btn>Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="catalog__item" data-id="3">
+            <picture class="catalog__item-picture">
+              <source srcset="images/flower/flower-3.avif" type="image/avif">
+              <source srcset="images/flower/flower-3.webp" type="image/webp">
+              <img class="catalog__img" src="images/flower/flower-3.jpg" alt="">
+            </picture>
+            <div class="catalog__item-info">
+              <div class="catalog__item-info-top">
+                <p class="catalog__item-title" data-title-flower>Body Builder</p>
+                <p class="catalog__item-price" data-price-flower>37</p>
+              </div>
+              <button class="btn btn--transparent catalog__btn-about">Подробнее</button>
+              <button class="btn catalog__btn-buy" data-buy-btn>Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="catalog__item" data-id="4">
+            <picture class="catalog__item-picture">
+              <source srcset="images/flower/flower-4.avif" type="image/avif">
+              <source srcset="images/flower/flower-4.webp" type="image/webp">
+              <img class="catalog__img" src="images/flower/flower-4.jpg" alt="">
+            </picture>
+            <div class="catalog__item-info">
+              <div class="catalog__item-info-top">
+                <p class="catalog__item-title" data-title-flower>First Price</p>
+                <p class="catalog__item-price" data-price-flower>37</p>
+              </div>
+              <button class="btn btn--transparent catalog__btn-about">Подробнее</button>
+              <button class="btn catalog__btn-buy" data-buy-btn>Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="catalog__item" data-id="5">
+            <picture class="catalog__item-picture">
+              <source srcset="images/flower/flower-5.avif" type="image/avif">
+              <source srcset="images/flower/flower-5.webp" type="image/webp">
+              <img class="catalog__img" src="images/flower/flower-5.jpg" alt="">
+            </picture>
+            <div class="catalog__item-info">
+              <div class="catalog__item-info-top">
+                <p class="catalog__item-title" data-title-flower>First Class</p>
+                <p class="catalog__item-price" data-price-flower>40</p>
+              </div>
+              <button class="btn btn--transparent catalog__btn-about">Подробнее</button>
+              <button class="btn catalog__btn-buy" data-buy-btn>Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="catalog__item" data-id="6">
+            <picture class="catalog__item-picture">
+              <source srcset="images/flower/flower-6.avif" type="image/avif">
+              <source srcset="images/flower/flower-6.webp" type="image/webp">
+              <img class="catalog__img" src="images/flower/flower-6.jpg" alt="">
+            </picture>
+            <div class="catalog__item-info">
+              <div class="catalog__item-info-top">
+                <p class="catalog__item-title" data-title-flower>Felicidad H.G</p>
+                <p class="catalog__item-price" data-price-flower>40</p>
+              </div>
+              <button class="btn btn--transparent catalog__btn-about">Подробнее</button>
+              <button class="btn catalog__btn-buy" data-buy-btn>Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="catalog__item" data-id="7">
+            <picture class="catalog__item-picture">
+              <source srcset="images/flower/flower-7.avif" type="image/avif">
+              <source srcset="images/flower/flower-7.webp" type="image/webp">
+              <img class="catalog__img" src="images/flower/flower-7.jpg" alt="">
+            </picture>
+            <div class="catalog__item-info">
+              <div class="catalog__item-info-top">
+                <p class="catalog__item-title" data-title-flower>Esta Bonita</p>
+                <p class="catalog__item-price" data-price-flower>40</p>
+              </div>
+              <button class="btn btn--transparent catalog__btn-about">Подробнее</button>
+              <button class="btn catalog__btn-buy" data-buy-btn>Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="catalog__item" data-id="8">
+            <picture class="catalog__item-picture">
+              <source srcset="images/flower/flower-8.avif" type="image/avif">
+              <source srcset="images/flower/flower-8.webp" type="image/webp">
+              <img class="catalog__img" src="images/flower/flower-8.jpg" alt="">
+            </picture>
+            <div class="catalog__item-info">
+              <div class="catalog__item-info-top">
+                <p class="catalog__item-title" data-title-flower>De Dijk: Aomori</p>
+                <p class="catalog__item-price" data-price-flower>40</p>
+              </div>
+              <button class="btn btn--transparent catalog__btn-about">Подробнее</button>
+              <button class="btn catalog__btn-buy" data-buy-btn>Добавить в корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__top">
+            <div class="about__info">
+              <h1 class="big-heading about__info-title">О нас</h1>
+              <p class="about__info-text">
+                Компания BUTON - это ведущий поставщик тюльпанов оптом. Мы специализируемся на выращивании и продаже качественных сортов тюльпанов, по голландской технологии. Наша компания гарантирует свежесть и долгий срок цветения наших тюльпанов, что делает нас надежным партнером для флористических и торговых предприятий.
+              </p>
+            </div>
+            <div class="swiper about__swiper">
+              <div class="swiper-wrapper about__swiper-wrapper">
+                <div class="swiper-slide about__slide">
+                  <picture class="about__slide-picture">
+                    <source srcset="images/about-swiper/about-1.avif" type="image/avif">
+                    <source srcset="images/about-swiper/about-1.webp" type="image/webp">
+                    <img class="about__slide-img" src="images/about-swiper/about-1.jpg" alt="">
+                  </picture>
+                  <div class="about__slide-panel">
+                    <svg class="about__slide-panel-img" viewBox="0 0 41 36" width="41" heigth="36">
+                      <use xlink:href="images/sprite.svg#about-swiper--about-1-svg"></use>
+                    </svg>
+                    <p class="about__slide-panel-text">
+                      Выращивем тюльпаны в собственных теплицах
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide about__slide">
+                  <picture class="about__slide-picture">
+                    <source srcset="images/about-swiper/about-1.avif" type="image/avif">
+                    <source srcset="images/about-swiper/about-1.webp" type="image/webp">
+                    <img class="about__slide-img" src="images/about-swiper/about-1.jpg" alt="">
+                  </picture>
+                  <div class="about__slide-panel">
+                    <svg class="about__slide-panel-img" viewBox="0 0 41 36" width="41" heigth="36">
+                      <use xlink:href="images/sprite.svg#about-swiper--about-1-svg"></use>
+                    </svg>
+                    <p class="about__slide-panel-text">
+                      Выращивем тюльпаны в собственных теплицах
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide about__slide">
+                  <picture class="about__slide-picture">
+                    <source srcset="images/about-swiper/about-1.avif" type="image/avif">
+                    <source srcset="images/about-swiper/about-1.webp" type="image/webp">
+                    <img class="about__slide-img" src="images/about-swiper/about-1.jpg" alt="">
+                  </picture>
+                  <div class="about__slide-panel">
+                    <svg class="about__slide-panel-img" viewBox="0 0 41 36" width="41" heigth="36">
+                      <use xlink:href="images/sprite.svg#about-swiper--about-1-svg"></use>
+                    </svg>
+                    <p class="about__slide-panel-text">
+                      Выращивем тюльпаны в собственных теплицах
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev about__swiper-btn-prev"></div>
+              <div class="swiper-button-next about__swiper-btn-next"></div>
+            </div>
+          </div>
+          <div class="about__bottom">
+            <h2 class="small-heading about__bottom-title">Преимущества наших тюльпанов:</h2>
+            <div class="about__bottom-list">
+              <div class="about__bottom-item">
+                <p class="about__bottom-item-text">
+                  Сохранение свежести до 15 дней при комнатной температуре
+                </p>
+              </div>
+              <div class="about__bottom-item">
+                <p class="about__bottom-item-text">
+                  Абсолютно стерильная среда выращивания без вредителей и болезней 
+                </p>
+              </div>
+              <div class="about__bottom-item">
+                <p class="about__bottom-item-text">
+                  Сохранение всего цветка  благодаря аккуратной ручной фасовке
+                </p>
+              </div>
+              <div class="about__bottom-item">
+                <p class="about__bottom-item-text">
+                  Хранение, отгрузка, упаковка при комфортной температуре около 2 °C
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how" class="how">
+      <div class="container">
+        <h1 class="big-heading how__title">Как мы работаем</h1>
+        <div class="how__inner">
+          <picture class="how__picture">
+            <source srcset="images/how-img.avif" type="image/avif">
+            <source srcset="images/how-img.webp" type="image/webp">
+            <img class="how__img" src="images/how-img.png" alt="">
+          </picture>
+          <ol class="how__list">
+            <li class="how__item">
+              <h2 class="small-heading how__item-title">Заявка на сайте</h2>
+              <p class="how__item-text">
+                Оформите заказ на сайте или позвоните нам. С вами оперативно свяжется наш менеджер, ответит на все ваши вопросы и согласует заказ
+              </p>
+              <div class="how__item-bottom">
+                <button class="btn btn-request how__btn">Оставить заявку</button>
+                <a class="how__phone" href="tel:89299205151">8 (929) 920-51-51</a>
+              </div>
+            </li>
+            <li class="how__item">
+              <h2 class="small-heading how__item-title">Доставка</h2>
+              <p class="how__item-text">
+                Оперативно доставим ваш заказ по Туле, Тульской области и Москве. Упаковка и хранение будет проводится строго в комфортных условиях для Ваших цветов
+              </p>
+            </li>
+            <li class="how__item">
+              <h2 class="small-heading how__item-title">Получение и оплата</h2>
+              <p class="how__item-text">
+                Проверяете цветы и оплачиваете заказ
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="contacts__inner">
+        <div id="contacts-map" class="contacts__map">
+          <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+          </script>
+        </div>
+        <div class="contacts__info">
+          <div class="container contacts__info-inner">
+            <div class="contacts__panel">
+              <picture class="contacts__picture">
+                <source srcset="images/contacts-img.avif" type="image/avif">
+                <source srcset="images/contacts-img.webp" type="image/webp">
+                <img class="contacts__img" src="images/contacts-img.png" alt="">
+              </picture>
+              <h1 class="small-heading contacts__title">Наши контакты</h1>
+              <a class="contacts__phone" href="tel:89299205151">8 (929) 920-51-51</a>
+              <ul class="social contacts__social">
+                <li class="social__item contacts__social-item">
+                  <a class="social__link contacts__social-link" href="#" target="_blank">
+                    <svg class="social__img contacts__social-img" viewBox="0 0 24 22" width="24" heigth="22">
+                      <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item contacts__social-item">
+                  <a class="social__link contacts__social-link" href="#" target="_blank">
+                    <svg class="social__img contacts__social-img" viewBox="0 0 24 22" width="24" heigth="22">
+                      <use xlink:href="images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item contacts__social-item">
+                  <a class="social__link contacts__social-link" href="#" target="_blank">
+                    <svg class="social__img contacts__social-img" viewBox="0 0 24 22" width="24" heigth="22">
+                      <use xlink:href="images/sprite.svg#whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <p class="contacts__location">
+                Лесная улица, 19, деревня Александровка, Тульская область
+              </p>
+              <p class="contacts__text">
+                Вы можете приехать и удостовериться в качестве наших тюльпанов лично 
+              </p>
+              <button class="btn btn-viewing contacts__btn">Записаться на просмотр</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__item" href="#">Пользовательское соглашение</a>
+        <a class="footer__item" href="#">Политика конфидеденциальности</a>
+        <p class="footer__item">© 2024 BUTON</p>
+      </div>
+    </div>
+  </footer>
+  <div class="modal modal-request">
+    <div class="modal-request__inner">
+      <h2 class="small-heading modal-request__title">Оставьте заявку и мы с Вами свяжемся</h2>
+      <form class="modal-request__form" action="">
+        <input class="modal-request__input" name="name" type="text" placeholder="Ваше имя">
+        <input class="modal-request__input" name="email" type="email" placeholder="Ваш E-mail">
+        <input class="modal-request__input" name="phone" type="phone" placeholder="+7 ххх ххх хх хх ">
+        <button class="btn modal-request__btn" type="submit">Оставить заявку</button>
+        <p class="modal-request__text">
+          Нажимая на кнопку вы соглашаетесь с политикой конфиеденциальности
+        </p>
+      </form>
+      <button class="modal-close modal-request__close">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <div class="modal modal-viewing">
+    <div class="modal-viewing__inner">
+      <h2 class="small-heading modal-viewing__title">Оставьте заявку на просмотр наших теплиц</h2>
+      <picture class="modal-viewing__picture">
+        <source srcset="images/about-swiper/about-1.avif" type="image/avif">
+        <source srcset="images/about-swiper/about-1.webp" type="image/webp">
+        <img class="modal-viewing__img" src="images/about-swiper/about-1.jpg" alt="">
+      </picture>
+      <form class="modal-viewing__form" action="">
+        <input class="modal-viewing__input" name="name" type="text" placeholder="Ваше имя">
+        <input class="modal-viewing__input" name="email" type="email" placeholder="Ваш E-mail">
+        <input class="modal-viewing__input" name="phone" type="phone" placeholder="+7 ххх ххх хх хх ">
+        <button class="btn modal-viewing__btn" type="submit">Оставить заявку</button>
+        <p class="modal-viewing__text">
+          Нажимая на кнопку вы соглашаетесь с политикой конфиеденциальности
+        </p>
+      </form>
+      <button class="modal-close modal-viewing__close">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <div class="modal cart modal--active">
+    <div class="cart__inner">
+      <h1 class="small-heading cart__title">Ваш заказ: </h1>
+      <div class="cart__list">
+        
+      </div>
+      <p class="cart__price">
+        <span class="cart__price-total">Итого: 0</span>
+        <span class="cart__price-old cart__price-old--hidden">0</span>
+      </p>
+      <p class="cart__discount">Ваша скидка 10%</p>
+      <form class="cart__form" action="">
+        <input class="cart__input" name="name" type="text" placeholder="Ваше имя">
+        <input class="cart__input" name="email" type="email" placeholder="Ваш E-mail">
+        <input class="cart__input" name="phone" type="phone" placeholder="+7 ххх ххх хх хх ">
+        <button class="btn cart__btn" type="submit">Оставить заявку</button>
+        <p class="cart__text">
+          Нажимая на кнопку вы соглашаетесь с политикой конфиеденциальности
+        </p>
+      </form>
+      <button class="modal-close cart__close">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <div class="modal modal-product" data-id="3">
+    <div class="modal-product__inner">
+      <div class="swiper modal-product__swiper">
+        <div class="swiper-wrapper modal-product__wrapper">
+          <div class="swiper-slide modal-product__slide">
+            <picture class="modal-product__picture">
+              <source srcset="images/flower/flower-1-big.avif" type="image/avif">
+              <source srcset="images/flower/flower-1-big.webp" type="image/webp">
+              <img class="modal-product__img" src="images/flower/flower-1-big.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide modal-product__slide">
+            <picture class="modal-product__picture">
+              <source srcset="images/flower/flower-1-big.avif" type="image/avif">
+              <source srcset="images/flower/flower-1-big.webp" type="image/webp">
+              <img class="modal-product__img" src="images/flower/flower-1-big.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide modal-product__slide">
+            <picture class="modal-product__picture">
+              <source srcset="images/flower/flower-1-big.avif" type="image/avif">
+              <source srcset="images/flower/flower-1-big.webp" type="image/webp">
+              <img class="modal-product__img" src="images/flower/flower-1-big.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-button-prev modal-product__swiper-btn-prev"></div>
+        <div class="swiper-button-next modal-product__swiper-btn-next"></div>
+      </div>
+      <div class="modal-product__info">
+        <h1 class="big-heading modal-product__title" data-title-flower>Body Builder</h1>
+        <p class="modal-product__price" data-price-flower>37</p>
+        <button class="btn modal-product__btn" data-buy-btn>Добавить в корзину</button>
+        <div class="modal-product__text">
+          <p>
+            Окунитесь в весеннюю симфонию тюльпанов, где каждый бутон — это яркая нота в удивительной игре цветов. Тюльпан эн ред вестфришен привнесет в ваши букеты не только разнообразие оттенков, но и неповторимый весенний настрой.
+          </p>
+          <p>
+            Тюльпан эн ред вестфришен превратят ваш букет в весеннюю сказку. Подарите своим клиентам радость встречи с весной, сохраняя яркость и свежесть этих красочных цветов в течение долгих дней.
+          </p>
+        </div>
+        <div class="modal-product__properties">
+          <p>Страна: НИДЕРЛАНДЫ</p>
+          <p>Ширина: 42</p>
+          <p>Длина: 40</p>
+        </div>
+      </div>
+      <div thumbsSlider="" class="swiper modal-product__gallery">
+        <div class="swiper-wrapper modal-product__gallery-inner">
+          <button class="swiper-slide modal-product__item">
+            <picture class="modal-product__item-picture">
+              <source srcset="images/flower/flower-1-small.avif" type="image/avif">
+              <source srcset="images/flower/flower-1-small.webp" type="image/webp">
+              <img class="modal-product__item-img" src="images/flower/flower-1-small.jpg" alt="">
+            </picture>
+          </button>
+          <button class="swiper-slide modal-product__item">
+            <picture class="modal-product__item-picture">
+              <source srcset="images/flower/flower-1-small.avif" type="image/avif">
+              <source srcset="images/flower/flower-1-small.webp" type="image/webp">
+              <img class="modal-product__item-img" src="images/flower/flower-1-small.jpg" alt="">
+            </picture>
+          </button>
+          <button class="swiper-slide modal-product__item">
+            <picture class="modal-product__item-picture">
+              <source srcset="images/flower/flower-1-small.avif" type="image/avif">
+              <source srcset="images/flower/flower-1-small.webp" type="image/webp">
+              <img class="modal-product__item-img" src="images/flower/flower-1-small.jpg" alt="">
+            </picture>
+          </button>
+        </div>
+      </div>
+      <button class="modal-close modal-product__close">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>
